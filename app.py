@@ -61,7 +61,7 @@ def main():
                     f.write(image_file.getbuffer())
                     
                 st.write("Classifying...")
-                model_path = "CNN-model"  # Adjust this path as per your setup
+                model_path = "CNN_model"  # Adjust this path as per your setup
                 if os.path.exists(model_path):
                     model = keras.models.load_model(model_path)
                     result, acc = prediction(image_file.name, model)

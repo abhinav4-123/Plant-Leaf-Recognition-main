@@ -5,7 +5,6 @@ from tensorflow.keras.preprocessing import image
 import keras
 from PIL import Image
 import cv2
-import os
 
 # All the plant species in the trained dataset
 labels = [
